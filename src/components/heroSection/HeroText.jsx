@@ -9,9 +9,9 @@ const HeroText = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="lg:text-2xl sm:text-xl  uppercase text-lightGrey "
+        className="lg:text-2xl sm:text-xl uppercase text-lightGrey"
       >
-        Front-End Web Developer
+        MERN Stack Developer & Java Developer
       </motion.h2>
       <motion.h1
         variants={fadeIn("right", 0.4)}
@@ -20,18 +20,18 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="md:text-[2.8rem] lg:text-6xl sm:text-4xl text-orange font-bold uppercase"
       >
-        Abdelrahman <br className="sm:hidden md:block" />
-        Qassem
+        Pratik <br className="sm:hidden md:block" />
+        Yelkar
       </motion.h1>
       <motion.p
         variants={fadeIn("up", 0.6)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0 }}
-        className="text-lg mt-4"
+        className="text-lg mt-4 text-lightGrey"
       >
-        A Passionate Web Developer and Instructor <br /> with 3 years of
-        experience.
+        I build robust web apps using Java, Python, React, Node.js, MongoDB, and Express. <br />
+        Passionate about writing clean code and delivering real-world solutions.
       </motion.p>
     </div>
   );

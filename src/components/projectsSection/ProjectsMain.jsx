@@ -5,32 +5,32 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
   {
-    name: "Vacation of Africa",
-    year: "Mar2022",
-    align: "right",
-    image: "../../public/images/website-img-1.jpg",
-    link: "#",
-  },
-  {
-    name: "Moola App",
-    year: "Sept2022",
+    name: "AI NewsSphere (MERN)",
+    year: "2025",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
-    link: "#",
+    image: "images/AI-NewsSphere.png", 
+    link: null, 
   },
   {
-    name: "Tourzania",
-    year: "Jan2023",
+    name: "Resume Ranker",
+    year: "2024",
     align: "right",
-    image: "../../public/images/website-img-3.jpg",
-    link: "#",
+    image: "images/ResumeRanker.jpg",
+    link: "https://github.com/PratikYelkar/Resume-Ranker--frontend",
   },
   {
-    name: "Bank of Luck",
-    year: "May2024",
+    name: "QR-Based Ticket Entry System",
+    year: "2023",
     align: "left",
-    image: "../../public/images/website-img-4.jpg",
-    link: "#",
+    image: "images/QRTicketEntry.png",
+    link: "https://github.com/PratikYelkar/National-Museum",
+  },
+  {
+    name: "Emotion Based Music Player",
+    year: "2021",
+    align: "right",
+    image: "images/emotion-music.png",
+    link: "https://github.com/PratikYelkar/Emotion-Based-Music-Player",
   },
 ];
 
@@ -45,18 +45,18 @@ const ProjectsMain = () => {
       >
         <ProjectsText />
       </motion.div>
+
       <div className="flex flex-col gap-20 max-w-[900px] mx-auto mt-12">
-        {projects.map((project, index) => {
-          return (
-            <SingleProject
-              key={index}
-              name={project.name}
-              year={project.year}
-              align={project.align}
-              image={project.image}
-            />
-          );
-        })}
+        {projects.map((project, index) => (
+          <SingleProject
+            key={index}
+            name={project.name}
+            year={project.year}
+            align={project.align}
+            image={project.image}
+            link={project.link}
+          />
+        ))}
       </div>
     </div>
   );

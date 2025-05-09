@@ -5,60 +5,55 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const experiences = [
   {
-    job: "Front-End Developer",
-    company: "Alex Apps",
-    date: "2022 - Present",
+    job: "Python Development Intern",
+    company: "Coding Raja Technologies",
+    date: "Jul 2024 – Sep 2024",
     responsibilities: [
-      "Implementing reusable components.",
-      "Participating in large scale application.",
-      "Working on the performance of web applications.",
-      "Generating new ideas for better user experience.",
+      "Developed a Budget Tracker app enhancing financial tracking efficiency by 25%.",
+      "Streamlined data workflows with Python and JSON, reducing errors by 20%.",
+      "Designed real-time dashboards for improved user experience.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Nucamp",
-    date: "2023 - Present",
+    job: "AI/ML Intern",
+    company: "Proazure Software Solutions",
+    date: "Jan 2020 – Jan 2021",
     responsibilities: [
-      "Explaining and facilitating web development concepts.",
-      "Help students with their assignments and grade them weekly.",
-      "Provide support for students through their learning journey.",
+      "Earned recognition as a top performer in AI/ML training projects.",
+      "Performed advanced data preprocessing and model optimization using Python and Pandas.",
+      "Implemented and evaluated ML models with improved prediction accuracy.",
     ],
   },
   {
-    job: "Course Instructor",
-    company: "Sprints",
-    date: "2024 - Present",
+    job: "Full-Stack Developer",
+    company: "Self-driven",
+    date: "2025 – Present",
     responsibilities: [
-      "Teaching JavaScript, React and TailwindCSS.",
-      "Participating in preparing course materials.",
-      "Helping students through their way in learning web development technologies.",
+      "Built Resume Ranker using Django, React.js, and Python; reduced evaluation time by 30%.",
+      "Developed a Deepfake Detection system using ResNext and LSTM with 85% accuracy.",
+      "Led development for QR-Based Ticket System using full-stack technologies and secure booking logic.",
     ],
   },
 ];
 
 const AllExperiences = () => {
   return (
-    <div className="flex md:flex-row sm:flex-col items-center justify-between">
-      {experiences.map((experience, index) => {
-        return (
-          <>
-            <SingleExperience key={index} experience={experience} />
-            {index < 2 ? (
-              <motion.div
-                variants={fadeIn("right", 0)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
-              >
-                <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
-              </motion.div>
-            ) : (
-              ""
-            )}
-          </>
-        );
-      })}
+    <div className="flex md:flex-row sm:flex-col items-center justify-between flex-wrap gap-10">
+      {experiences.map((experience, index) => (
+        <div key={index} className="flex items-center gap-6">
+          <SingleExperience experience={experience} />
+          {index < experiences.length - 1 && (
+            <motion.div
+              variants={fadeIn("right", 0)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
+            >
+              <FaArrowRightLong className="text-6xl text-orange lg:block sm:hidden" />
+            </motion.div>
+          )}
+        </div>
+      ))}
     </div>
   );
 };
