@@ -1,8 +1,16 @@
-# React + Vite
+# React + Vite Portfolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a minimal setup using React with Vite. It supports fast HMR, modern tooling, Tailwind CSS, and ESLint.
 
-Currently, two official plugins are available:
+### Features
+- ⚛️ React 18 with Vite
+- 🎨 Tailwind CSS integration
+- 🧠 ESLint with React best practices
+- ⚡ Fast Refresh for development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Get Started
+
+```bash
+npm install
+npm run dev
+git clone "https://github.com/PratikYelkar/PY-portfolio.git"
