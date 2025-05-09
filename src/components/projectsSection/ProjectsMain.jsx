@@ -12,6 +12,7 @@ const projects = [
     link: null, 
   },
   {
+
     name: "Resume Ranker",
     year: "2024",
     align: "right",
