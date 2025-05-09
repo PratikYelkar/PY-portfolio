@@ -1,5 +1,5 @@
 import { FaJava, FaReact, FaNodeJs, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiMysql } from "react-icons/si";
+import { SiMongodb, SiExpress, SiMysql, SiSpring } from "react-icons/si";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
@@ -7,6 +7,10 @@ const skills = [
   {
     skill: "Java",
     icon: FaJava,
+  },
+  {
+    skill: "Spring Boot",
+    icon: SiSpring,
   },
   {
     skill: "Python",
@@ -41,21 +45,19 @@ const skills = [
 const AllSkillsSM = () => {
   return (
     <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
-      {skills.map((item, index) => {
-        return (
-          <motion.div
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
-            key={index}
-            className="flex flex-col items-center"
-          >
-            <item.icon className="text-7xl text-orange" />
-            <p className="text-center mt-4">{item.skill}</p>
-          </motion.div>
-        );
-      })}
+      {skills.map((item, index) => (
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          key={index}
+          className="flex flex-col items-center"
+        >
+          <item.icon className="text-7xl text-orange" />
+          <p className="text-center mt-4">{item.skill}</p>
+        </motion.div>
+      ))}
     </div>
   );
 };
