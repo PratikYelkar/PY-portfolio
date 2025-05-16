@@ -9,7 +9,7 @@ const projects = [
     year: "2025",
     align: "left",
     image: "images/AI-NewsSphere.png", 
-    link: null, 
+    link: "https://github.com/PratikYelkar/AI-NewsSphere.git", 
   },
   {
 
