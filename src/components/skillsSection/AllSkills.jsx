@@ -1,12 +1,11 @@
 import SingleSkill from "./SingleSkill";
 import { FaJava, FaReact, FaNodeJs, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiMysql, SiSpring } from "react-icons/si";
+import { SiMongodb, SiExpress, SiMysql,  } from "react-icons/si";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const skills = [
   { skill: "Java", icon: FaJava },
-  { skill: "Spring Boot", icon: SiSpring },
   { skill: "MongoDB", icon: SiMongodb },
   { skill: "ExpressJS", icon: SiExpress },
   { skill: "ReactJS", icon: FaReact },

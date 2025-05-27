@@ -4,16 +4,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
 const experiences = [
-  {
-    job: "Python Development Intern",
-    company: "Coding Raja Technologies",
-    date: "Jul 2024 – Sep 2024",
-    responsibilities: [
-      "Developed a Budget Tracker app enhancing financial tracking efficiency by 25%.",
-      "Streamlined data workflows with Python and JSON, reducing errors by 20%.",
-      "Designed real-time dashboards for improved user experience.",
-    ],
-  },
+
   {
     job: "AI/ML Intern",
     company: "Proazure Software Solutions",
@@ -22,6 +13,16 @@ const experiences = [
       "Earned recognition as a top performer in AI/ML training projects.",
       "Performed advanced data preprocessing and model optimization using Python and Pandas.",
       "Implemented and evaluated ML models with improved prediction accuracy.",
+    ],
+  },
+  {
+    job: "Python Development Intern",
+    company: "Coding Raja Technologies",
+    date: "Jul 2024 – Sep 2024",
+    responsibilities: [
+      "Developed a Budget Tracker app enhancing financial tracking efficiency by 25%.",
+      "Streamlined data workflows with Python and JSON, reducing errors by 20%.",
+      "Designed real-time dashboards for improved user experience.",
     ],
   },
   {

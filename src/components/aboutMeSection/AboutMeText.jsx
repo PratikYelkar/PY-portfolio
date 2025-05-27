@@ -6,7 +6,7 @@ const AboutMeText = () => {
       <h2 className="text-6xl text-cyan mb-10">About Me</h2>
       <p>
         Hi, I&apos;m Pratik — a dedicated software developer and aspiring full-stack engineer.
-        I have hands-on experience working with a wide range of technologies including Java, MongoDB, Express.js, Data Analytics, SQL, Python, JavaScript, Node.js, React.js, Spring Boot, and Git.
+        I have hands-on experience working with a wide range of technologies including Java, MongoDB, Express.js, SQL, Python, JavaScript, Node.js, React.js, and Material UI.
         My focus is on building responsive, efficient, and scalable web applications using modern development practices.
         I’m committed to continuous learning and enjoy solving real-world challenges through clean, maintainable code.
       </p>
