@@ -1,6 +1,6 @@
 import SingleSkill from "./SingleSkill";
 import { FaJava, FaReact, FaNodeJs, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiMysql,  } from "react-icons/si";
+import { SiMongodb, SiExpress, SiMysql, SiMaterialdesign } from "react-icons/si";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
@@ -9,10 +9,12 @@ const skills = [
   { skill: "MongoDB", icon: SiMongodb },
   { skill: "ExpressJS", icon: SiExpress },
   { skill: "ReactJS", icon: FaReact },
+  { skill: "Material UI", icon: SiMaterialdesign },
   { skill: "NodeJS", icon: FaNodeJs },
   { skill: "Python", icon: FaPython },
   { skill: "MySQL", icon: SiMysql },
   { skill: "Git", icon: FaGitAlt },
+   
 ];
 
 const AllSkills = () => {

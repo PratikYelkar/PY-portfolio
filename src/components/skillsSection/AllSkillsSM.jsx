@@ -1,5 +1,10 @@
 import { FaJava, FaReact, FaNodeJs, FaPython, FaGitAlt } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiMysql, SiSpring } from "react-icons/si";
+import {
+  SiMongodb,
+  SiExpress,
+  SiMysql,
+  SiMaterialdesign,
+} from "react-icons/si";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
@@ -7,10 +12,6 @@ const skills = [
   {
     skill: "Java",
     icon: FaJava,
-  },
-  {
-    skill: "Spring Boot",
-    icon: SiSpring,
   },
   {
     skill: "Python",
@@ -27,6 +28,10 @@ const skills = [
   {
     skill: "ReactJS",
     icon: FaReact,
+  },
+  {
+    skill: "Material UI",
+    icon: SiMaterialdesign,
   },
   {
     skill: "NodeJS",
